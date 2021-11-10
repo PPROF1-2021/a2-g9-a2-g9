@@ -1,0 +1,25 @@
+INSERT	INTO  usuarios (Nombre, Apellido, DNI, Altura, Peso, Edad, Sexo, IDusuario, IDplanes_diarios, IDplanes_mensuales, Password) VALUES	
+('Leonardo', 'Nieto', '12345678', '168', '69', '30', 'Masculino', '1', '2','0', '123456' )
+
+
+SELECT *
+FROM usuarios
+WHERE Nombre= 'Juan' AND Password= '123456';
+
+
+
+INSERT	INTO  usuarios (Nombre, Apellido, DNI, Altura, Peso, Edad, Sexo, IDusuario, IDplanes_diarios, IDplanes_mensuales, Password) VALUES	
+('Lucia', 'Benvenutti', '12345678', '168', '69', '35', 'Femenino', '2', '0','2', '654321' )
+
+
+UPDATE usuarios
+SET DNI= 36000000
+WHERE IDusuario= '2'
+
+
+UPDATE usuarios
+SET DNI= 36000000, EDAD= 31, Altura= 171
+WHERE IDusuario= '1' 
+
+DELETE FROM usuarios
+WHERE IDusuario= 3
